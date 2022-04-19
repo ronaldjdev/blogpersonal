@@ -1,1 +1,0 @@
-# templete_blogpersonal
