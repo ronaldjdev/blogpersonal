@@ -45,6 +45,9 @@ Portafolio {% endblock title %} {% block content %}
                     <a href="#services"><i class="icon-briefcase"></i></a>
                 </li>
                 <li>
+                    <a href="#skill"><i class="icon-notebook"></i></a>
+                </li>
+                <li>
                     <a href="#experience"><i class="icon-graduation"></i></a>
                 </li>
                 <li>
@@ -120,7 +123,7 @@ Portafolio {% endblock title %} {% block content %}
                         >
                     </div>
                 </div>
-
+                <br />
                 <!-- scroll down mouse wheel -->
                 <div class="scroll-down">
                     <a href="#about" class="mouse-wrapper">
@@ -352,24 +355,12 @@ Portafolio {% endblock title %} {% block content %}
                                         personalización de sitios web, también
                                         soy bueno en WordPress.
                                     </p>
-                                    <div class="row">
-                                        <div class="d-flex col-md">
-                                            <div class="mt-3 m-2">
-                                                <a
-                                                    href="#"
-                                                    class="btn btn-default"
-                                                    >Descargar CV</a
-                                                >
-                                            </div>
-                                            <div class="mt-3">
-                                                <a
-                                                    href="#skill"
-                                                    class="btn btn-default"
-                                                    >Ver mas</a
-                                                >
-                                            </div>
-                                        </div>
+                                    <div class="mt-3 m-2">
+                                        <a href="#" class="btn btn-default"
+                                            >Descargar Curriculum Vitae</a
+                                        >
                                     </div>
+
                                     <div
                                         class="spacer d-md-none d-lg-none"
                                         data-height="30"
@@ -601,13 +592,17 @@ Portafolio {% endblock title %} {% block content %}
                     <p class="mb-0">
                         ¿Buscas un trabajo personalizado?
                         <a href="#contact">¡Da clic aqui</a> para contactarme!
-                        👋
+                        <img
+                        src="{% static 'images/arcoiris.png' %}"
+                        width="30"
+                        srcset=""
+                    />
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- section experience -->
+        <!-- section skills -->
         <section id="skill">
             <div class="container">
                 <!-- section title -->
@@ -1148,22 +1143,18 @@ Portafolio {% endblock title %} {% block content %}
                 </div>
 
                 <!-- more button -->
-                <div class="load-more text-center mt-4">
-                    <a href="javascript:" class="btn btn-default"
-                        ><i class="fas fa-spinner"></i> Ver más</a
-                    >
-                    <!-- numbered pagination (hidden for infinite scroll) -->
-                    <ul class="portfolio-pagination list-inline d-none">
-                        <li class="list-inline-item">1</li>
-                        <li class="list-inline-item">
-                            <a href="works-2.html">2</a>
-                        </li>
-                    </ul>
-                </div>
+			<div class="load-more text-center mt-4">
+				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i>Cargar más </a>
+				<!-- numbered pagination (hidden for infinite scroll) -->
+				<ul class="portfolio-pagination list-inline d-none">
+					<li class="list-inline-item">1</li>
+					<li class="list-inline-item"><a href="works-2.html">2</a></li>
+				</ul>
+			</div>
             </div>
         </section>
 
-        <!-- section prices -->
+        <!--  section prices -->
         <section id="prices">
             <div class="container">
                 <!-- section title -->
@@ -1178,23 +1169,16 @@ Portafolio {% endblock title %} {% block content %}
                             class="price-item bg-dark rounded shadow-light text-center"
                         >
                             <img
-                                src="https://via.placeholder.com/80x80"
+                                src="{% static 'images/portfolio.png' %}"
                                 alt="Regular"
+                                width="80"
                             />
-                            <h2 class="plan">Landing Page</h2>
+                            <h2 class="plan">Single Page</h2>
                             <p>
                                 Una opción simple pero poderosa para administrar
                                 su negocio
                             </p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Diseño Web Responsive</li>
-                                <li>1 Pagina (5 secciones)</li>
-                                <li>Formulario de contacto</li>
-                                <li>1 correo corporativo</li>
-                                <li>Certificado SSL</li>
-                                <li>Integracion con google maps</li>
-                                <li>Soporte Email</li>
-                            </ul>
+                            <p>Desde:</p>
                             <h3 class="price"><em>$</em>350<span>USD</span></h3>
                             <a href="#" class="btn btn-default"
                                 >Empieza ahora</a
@@ -1209,27 +1193,16 @@ Portafolio {% endblock title %} {% block content %}
                         >
                             <span class="badge">Recomendado</span>
                             <img
-                                src="https://via.placeholder.com/80x80"
+                                src="{% static 'images/analytics.png' %}"
                                 alt="Premium"
+                                width="80"
                             />
-                            <h2 class="plan">Premium</h2>
+                            <h2 class="plan">Dinamic Web Site</h2>
                             <p>
-                                Producto ilimitado que incluye integraciones de
-                                aplicaciones y más funciones
+                                incluye integraciones de aplicaciones y más
+                                funciones
                             </p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Diseño Web Responsive</li>
-                                <li>5 Paginas</li>
-                                <li>Formulario de contacto</li>
-                                <li>4 correo corporativo</li>
-                                <li>Certificado SSL</li>
-                                <li>Integracion con google maps</li>
-                                <li>
-                                    Enlace para mensaje de WhatssApp / Messenger
-                                    direct
-                                </li>
-                                <li>Soporte Email</li>
-                            </ul>
+                            <p>Desde:</p>
                             <h3 class="price"><em>$</em>350<span>USD</span></h3>
                             <a href="#" class="btn btn-default"
                                 >Empieza ahora</a
@@ -1243,30 +1216,17 @@ Portafolio {% endblock title %} {% block content %}
                             class="price-item bg-dark rounded shadow-light text-center"
                         >
                             <img
-                                src="https://via.placeholder.com/80x80"
-                                alt="Ultimate"
+                                src="{% static 'images/shop.png' %}"
+                                alt="Company Web Site"
+                                width="80"
                             />
-                            <h2 class="plan">Ultimate</h2>
-                            <p>
-                                Orientado para grandes empresas para grandes empresas 
-                            </p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Diseño Web Responsive</li>
-                                <li>12 Paginas</li>
-                                <li>Galerias</li>
-                                <li>3 Formulario de contacto</li>
-                                <li>10 correo corporativo</li>
-                                <li>Certificado SSL</li>
-                                <li>Integracion con google maps</li>
-                                <li>
-                                    WhatssApp / Messenger
-                                    direct
-                                </li>
-                                <li>Blog Incorporado</li>
-                                <li>24/7 support</li>
-                            </ul>
+                            <h2 class="plan">Company Web Site</h2>
+                            <p>Orientado para grandes empresas y e-commerce</p>
+                            <p>Desde:</p>
                             <h3 class="price"><em>$</em>550<span>USD</span></h3>
-                            <a href="#" class="btn btn-default">Empezar ahora</a>
+                            <a href="#" class="btn btn-default"
+                                >Empieza ahora</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -1277,7 +1237,7 @@ Portafolio {% endblock title %} {% block content %}
         <section id="testimonials">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title wow fadeInUp">Clients & Reviews</h2>
+                <h2 class="section-title wow fadeInUp">Clientes & Reseñas</h2>
 
                 <div class="spacer" data-height="60"></div>
 
@@ -1427,7 +1387,7 @@ Portafolio {% endblock title %} {% block content %}
         <section id="blog">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title wow fadeInUp">Latest Posts</h2>
+                <h2 class="section-title wow fadeInUp">Ultimas publicaciones</h2>
 
                 <div class="spacer" data-height="60"></div>
 
@@ -1537,7 +1497,7 @@ Portafolio {% endblock title %} {% block content %}
         <section id="contact">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title wow fadeInUp">Get In Touch</h2>
+                <h2 class="section-title wow fadeInUp">Ponte en contacto</h2>
 
                 <div class="spacer" data-height="60"></div>
 
@@ -1545,12 +1505,17 @@ Portafolio {% endblock title %} {% block content %}
                     <div class="col-md-4">
                         <!-- contact info -->
                         <div class="contact-info">
-                            <h3 class="wow fadeInUp">
-                                Let's talk about everything!
-                            </h3>
+                            <h3 class="wow fadeInUp">Charlemos un rato!</h3>
                             <p class="wow fadeInUp">
-                                Don't like forms? Send me an
-                                <a href="mailto:name@example.com">email</a>. 👋
+                                No te gustan los formularios? Enviame un
+                                <a href="mailto:eronald2009@gmail.com"
+                                    >correo electronico.
+                                    <img
+                                        src="{% static 'images/arcoiris.png' %}"
+                                        width="30"
+                                        srcset=""
+                                    />
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -1574,9 +1539,9 @@ Portafolio {% endblock title %} {% block content %}
                                             class="form-control"
                                             name="InputName"
                                             id="InputName"
-                                            placeholder="Your name"
+                                            placeholder="Nombre"
                                             required="required"
-                                            data-error="Name is required."
+                                            data-error="Se requiere el nombre."
                                         />
                                         <div
                                             class="help-block with-errors"
@@ -1592,9 +1557,9 @@ Portafolio {% endblock title %} {% block content %}
                                             class="form-control"
                                             id="InputEmail"
                                             name="InputEmail"
-                                            placeholder="Email address"
+                                            placeholder="Email"
                                             required="required"
-                                            data-error="Email is required."
+                                            data-error="Email es requerido."
                                         />
                                         <div
                                             class="help-block with-errors"
@@ -1610,9 +1575,9 @@ Portafolio {% endblock title %} {% block content %}
                                             class="form-control"
                                             id="InputSubject"
                                             name="InputSubject"
-                                            placeholder="Subject"
+                                            placeholder="Asunto"
                                             required="required"
-                                            data-error="Subject is required."
+                                            data-error="El asunto es requerido."
                                         />
                                         <div
                                             class="help-block with-errors"
@@ -1628,9 +1593,9 @@ Portafolio {% endblock title %} {% block content %}
                                             id="InputMessage"
                                             class="form-control"
                                             rows="5"
-                                            placeholder="Message"
+                                            placeholder="Mensaje"
                                             required="required"
-                                            data-error="Message is required."
+                                            data-error="El mensaje es requerido."
                                         ></textarea>
                                         <div
                                             class="help-block with-errors"
@@ -1646,7 +1611,7 @@ Portafolio {% endblock title %} {% block content %}
                                 value="Submit"
                                 class="btn btn-default"
                             >
-                                Send Message</button
+                                Enviar</button
                             ><!-- Send Button -->
                         </form>
                         <!-- Contact Form end -->

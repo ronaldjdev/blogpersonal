@@ -4,7 +4,7 @@ $(window).on('load', function() {
     /*=========================================================================
         Preloader
     =========================================================================*/
-    $("#preloader").delay(350).fadeOut('slow');
+    $("#preloader").delay(450).fadeOut('slow');
     // Because only Chrome supports offset-path, feGaussianBlur for now
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
@@ -157,7 +157,7 @@ $(window).on('load', function() {
         bufferPx: 0,
         maxPage: 6,
         loading: {
-            finishedMsg: "No more works",
+            finishedMsg: "Por ahora eso es todo vuelve pronto",
             msgText: '',
             speed: 'slow',
             selector: '.load-more',
