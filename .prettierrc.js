@@ -1,0 +1,13 @@
+export const arrowParens = "avoid";
+export const bracketSpacing = true;
+export const embeddedLanguageFormatting = "auto";
+export const endOfLine = "lf";
+export const jsxSingleQuote = false;
+export const printWidth = 80;
+export const proseWrap = "always";
+export const quoteProps = "as-needed";
+export const semi = false;
+export const singleQuote = true;
+export const tabWidth = 2;
+export const trailingComma = "all";
+export const useTabs = false;
