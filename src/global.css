@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 /* @tailwindcss /typography; */
+
+:root {
+  background-color: #030014;
+  box-sizing: border-box !important;
+} 
+* {
+  box-sizing: border-box !important;
+}
