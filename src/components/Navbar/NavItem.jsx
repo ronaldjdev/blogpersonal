@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export const NavItem = ({ to, label }) => {
   return (
@@ -7,5 +7,5 @@ export const NavItem = ({ to, label }) => {
         <h3>{label}</h3>
       </Link>
     </li>
-  );
-};
+  )
+}
