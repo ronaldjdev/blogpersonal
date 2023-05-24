@@ -1,4 +1,5 @@
 import { Navbar } from 'components/Navbar/Navbar'
+import { Footer } from 'components/Section/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 
 export const Layout = () => {
@@ -8,10 +9,10 @@ export const Layout = () => {
         <header>
           <Navbar />
         </header>
-        <main className="flex-1">
+        <main className="flex-1 h-full pb-32">
           <Outlet />
         </main>
-        <footer></footer>
+        <footer><Footer/></footer>
       </div>
     </>
   )
