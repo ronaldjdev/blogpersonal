@@ -6,12 +6,14 @@ import { BsStars } from 'react-icons/bs'
 export const Hero = () => {
   return (
     <>
-      <section id="hero-black-hole relative">
-        <div className="flex justify-center absolute md:inset-16 lg:inset-36">
+      <section id="hero-black-hole" className="hero">
+        <div className="flex justify-center absolute md:inset-16 lg:inset-30">
           <div className="flex flex-col items-center">
+          <div>
             <Badge icon={<BsStars color="white" />} />
+          </div>
             <Title
-              title="Crea experiencias digitales impactantes"
+              title="Experiencias digitales impactantes"
               subtitle="Ven y descubre mi mundo"
             />
           </div>

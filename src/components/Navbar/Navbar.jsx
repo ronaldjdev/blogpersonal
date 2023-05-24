@@ -1,3 +1,4 @@
+import { Brand } from './Brand'
 import { NavItem } from './NavItem'
 
 export const Navbar = () => {
@@ -11,8 +12,8 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between sticky top-0 z-50">
-        <div className="flex"></div>
+      <nav className="flex mx-auto items-center justify-between sticky top-0 z-50">
+        <div className="flex"><Brand/></div>
         <div className="flex m-3 py-2 px-20 rounded-3xl border border-white-08 bg-white-02 ">
           <ul className="flex gap-20 uppercase text-white font-bold text-sm tracking-widest">
             {data.map(({ to, label }) => (
