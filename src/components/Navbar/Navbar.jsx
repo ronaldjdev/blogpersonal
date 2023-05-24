@@ -1,3 +1,4 @@
+import { Button } from 'components/Button/Button/Button'
 import { Brand } from './Brand'
 import { NavItem } from './NavItem'
 
@@ -12,16 +13,22 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex mx-auto items-center justify-between sticky top-0 z-50">
-        <div className="flex"><Brand/></div>
-        <div className="flex m-3 py-2 px-20 rounded-3xl border border-white-08 bg-white-02 ">
+      <nav className="flex mx-10 my-5 items-center justify-between">
+        <div className="flex ">
+          <Brand />
+        </div>
+        <div className="flex py-2 px-20 rounded-3xl border border-white-08 bg-white-02 ">
           <ul className="flex gap-20 uppercase text-white font-bold text-sm tracking-widest">
             {data.map(({ to, label }) => (
               <NavItem key={label} to={to} label={label} />
             ))}
           </ul>
         </div>
-        <div className="flex"></div>
+        <div className="flex py-2 px-5 rounded-3xl border border-white-08 bg-white-02 ">
+          <button className="flex uppercase font-bold text-sm tracking-widest">
+              Login
+          </button>
+        </div>
       </nav>
     </>
   )

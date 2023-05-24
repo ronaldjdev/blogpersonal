@@ -9,9 +9,9 @@ export const Hero = () => {
       <section id="hero-black-hole" className="hero">
         <div className="flex justify-center absolute md:inset-16 lg:inset-30">
           <div className="flex flex-col items-center">
-          <div>
-            <Badge icon={<BsStars color="white" />} />
-          </div>
+            <div>
+              <Badge icon={<BsStars color="white" />} />
+            </div>
             <Title
               title="Experiencias digitales impactantes"
               subtitle="Ven y descubre mi mundo"

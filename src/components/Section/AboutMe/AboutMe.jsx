@@ -4,13 +4,13 @@ import { Button } from 'components/Button/Button/Button'
 export const AboutMe = () => {
   return (
     <>
-      <div className="grid place-items-center mx-auto ">
-        <div className="flex text-white">
+      <div className="grid place-items-center font-poppins mx-auto ">
+        <div className="flex ">
           Hola, Soy&nbsp;{' '}
-          <span className="flex textFlux font-bold">Ronald j Echeverry</span>
+          <span className="flex textFlux font-poppins font-bold">Ronald j Echeverry</span>
         </div>
-        <div className="flex textFlux">Desarrollador Web Full Stack</div>
-        <div className="flex text-white text-center mb-5">
+        <div className="flex font-poppins textFlux">Desarrollador Web Full Stack</div>
+        <div className="flex text-center  font-inter mb-5">
           Un apasionado por el codigo con años de experiencia en la creación de
           soluciones digitales de vanguardia. Si buscas un profesional
           comprometido con la excelencia y capaz de convertir tus ideas en

@@ -3,7 +3,7 @@
 export const Badge = ({ icon }) => {
   return (
     <>
-      <a className={`bgGradient textFlux text-white text-sm rounded-2xl `}>
+      <a className={`bgGradient textFlux font-inter text-sm rounded-2xl `}>
         {icon} New: Language
       </a>
     </>
