@@ -1,7 +1,14 @@
 // @ts-nocheck
 import { Button } from 'components/Button/Button/Button'
+import cvPdf from "assets/CV.pdf"
 
 export const AboutMe = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = cvPdf;
+    link.download = 'ronaldjdev.pdf'; // Opcional: especifica un nombre de archivo para la descarga
+    link.click();
+  };
   return (
     <>
       <div className="grid place-items-center font-poppins mx-auto ">
@@ -18,7 +25,7 @@ export const AboutMe = () => {
         </div>
         <div className="flex gap-10">
           <Button text="Contactame" />
-          <Button text="Descargar CV" />
+          <Button text="Descargar CV" onClick={handleDownload}/>
         </div>
       </div>
     </>
