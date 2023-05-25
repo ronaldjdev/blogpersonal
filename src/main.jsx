@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import { routes } from 'routes'
-import "swiper/css/effect-coverflow";
+import 'swiper/css/effect-coverflow'
 
-import "swiper/css/free-mode";
+import 'swiper/css/free-mode'
 
 import './global.css'
 

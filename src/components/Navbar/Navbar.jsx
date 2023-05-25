@@ -26,7 +26,7 @@ export const Navbar = () => {
         </div>
         <div className="flex py-2 px-5 rounded-3xl border border-white-08 bg-white-02 ">
           <button className="flex uppercase font-bold text-sm tracking-widest">
-              Login
+            Login
           </button>
         </div>
       </nav>

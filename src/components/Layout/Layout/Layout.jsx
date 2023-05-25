@@ -12,7 +12,9 @@ export const Layout = () => {
         <main className="flex-1 h-full pb-32">
           <Outlet />
         </main>
-        <footer><Footer/></footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   )
