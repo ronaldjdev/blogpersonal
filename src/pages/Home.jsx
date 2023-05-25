@@ -62,7 +62,7 @@ export const Home = () => {
             subtitle="Potenciando mi trayectoria con un cojunto versatil de habilidades."
           />
         </div>
-        <div className='flex justify-center items-center pb-5' style={{background:`url(${radar2})`, backgroundPosition:'center'}}>
+        <div className='flex justify-center items-center pb-5' style={{ background: `url(${radar2})`, backgroundPosition: 'center' }}>
           <div className="grid place-items-center place-content-center grid-rows-2 grid-cols-2 gap-x-6">
             <div className="flex flex-col items-center ">
               <div>
@@ -89,6 +89,17 @@ export const Home = () => {
               <Grids />
             </div>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className="mt-20 mb-40">
+          <Title
+            title="Proyectos"
+            subtitle="Transformando Ideas en Realidad."
+          />
+        </div>
+        <div>
+          <GridSwiper />
         </div>
       </div>
 

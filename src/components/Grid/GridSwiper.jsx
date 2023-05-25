@@ -1,37 +1,94 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 
 // import required modules
-import { Grid, Pagination } from "swiper";
+import { EffectCoverflow, FreeMode
+  , Autoplay, Pagination, Navigation } from "swiper";
+
 export const GridSwiper = () => {
   return (
     <>
       <Swiper
-        slidesPerView={4}
-        grid={{
-          rows: 3,
-          fill: "row",
+        effect={"coverflow"}
+        freeMode ={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}   
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+          waitForTransition: true,
         }}
-        spaceBetween={32}
-        pagination={{
-          clickable: true,
+        loop={true}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 10,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }}
-        modules={[Grid, Pagination]}
+        pagination={true}
+        modules={[EffectCoverflow, FreeMode, Navigation, Autoplay,]}
         className="mySwiper"
       >
-        <SwiperSlide className="bg-blue-500">Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide className="bg-blue-500 flex justify-center">Slide 4</SwiperSlide>
-        <SwiperSlide className="bg-blue-500 flex justify-center">Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-2xl"
+            src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </SwiperSlide>
+        <SwiperSlide
+          className="w-80"
+        >
+          <img className="rounded-xl"
+            src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </SwiperSlide>
       </Swiper>
     </>
   );
