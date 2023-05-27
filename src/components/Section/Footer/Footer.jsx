@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GlassFrame } from 'components/Layout/Frame/GlassFrame'
 import { Bottombar } from 'components/Navbar/Bottombar'
 import { Brand } from 'components/Navbar/Brand'
@@ -19,15 +20,12 @@ export const Footer = () => {
             </div>
           </GlassFrame>
           <div className="font-inter text-sm font-light m-3 flex justify-center">
-            <p>
-              desing by:&nbsp;
-            </p>
+            <p>desing by:&nbsp;</p>
             <span className="font-bold bgText"> ronaldjdev </span>
           </div>
         </div>
         <div className="absolute z-0 w-full object-cover">
-
-        <video className="w-full object-fill  " autoPlay loop src={pulse} />
+          <video className="w-full object-fill  " autoPlay loop src={pulse} />
         </div>
       </div>
     </>
