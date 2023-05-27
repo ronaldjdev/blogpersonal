@@ -24,9 +24,9 @@ export const Footer = () => {
             <span className="font-bold bgText"> ronaldjdev </span>
           </div>
         </div>
-        <div className="absolute z-0 w-full object-cover">
+        {/* <div className="absolute z-0 w-full object-cover">
           <video className="w-full object-fill  " autoPlay loop src={pulse} />
-        </div>
+        </div> */}
       </div>
     </>
   )

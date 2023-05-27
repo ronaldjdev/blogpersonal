@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import { routes } from 'routes'
 import 'swiper/css/effect-coverflow'
-
-import 'swiper/css/free-mode'
-
+import 'react-tooltip/dist/react-tooltip.css'
 import './global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
