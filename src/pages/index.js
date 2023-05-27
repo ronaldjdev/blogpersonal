@@ -1,0 +1,5 @@
+export { Contact } from 'pages/Contact'
+export { Home } from 'pages/Home'
+export { Profile } from 'pages/Profile'
+export { Project } from 'pages/Project'
+export { Skills } from 'pages/Skills'
