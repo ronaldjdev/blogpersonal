@@ -1,0 +1,49 @@
+# Dependencias instaladas con npm o Yarn
+/node_modules
+
+# Directorio de construcción
+/build
+
+# Archivo de configuración del entorno local
+.env
+
+# Archivos de registro
+*.log
+
+# Archivos de respaldo
+*.bak
+
+# Archivos de credenciales
+*.pem
+*.key
+
+# Archivos de compilación
+*.o
+*.obj
+
+# Archivos de intercambio de memoria
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+
+# Archivos de caché
+.cache/
+
+# Archivos de pruebas y cobertura
+/coverage
+
+# Archivos de construcción específicos de IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Carpeta de distribución
+!/dist/
