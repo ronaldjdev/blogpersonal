@@ -1,4 +1,5 @@
 import { ReactSVG } from 'react-svg'
+import circles from "assets/images/css-gradient-examples.svg"
 export const InfoCard = ({
   image,
   title,
@@ -27,10 +28,13 @@ export const InfoCard = ({
           !imageOnRight
             ? 'order-first md:order-last'
             : 'order-first md:order-first'
-        } flex flex-col items-center justify-center`}
+        } flex flex-col items-center justify-center relative`}
       >
+        <div className="absolute z-0 blur-[60px] opacity-20">
+          <ReactSVG src={circles}/>
+        </div>
         <h3
-          className={`mb-10 text-center font-bold ${titleClassName} text-2xl `}
+          className={`mb-10 text-center z-50 font-bold ${titleClassName} text-2xl `}
         >
           <span className="bgText font-poppins font-semibold ">{title}</span>
         </h3>

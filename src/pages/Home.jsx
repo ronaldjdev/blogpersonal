@@ -9,6 +9,7 @@ import {
   Hero,
   InfoCard,
   Title,
+  UiService,
 } from 'components'
 import portal from 'assets/images/portal.png'
 import fade from 'assets/images/fade.png'
@@ -44,6 +45,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="">
+        <UiService/>
         <InfoCard
           title="Front-end"
           description="Potencia tu presencia en línea con un desarrollo frontend excepcional"
