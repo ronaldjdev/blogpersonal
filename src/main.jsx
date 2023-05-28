@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import { routes } from 'routes'
 import 'swiper/css/effect-coverflow'
-
-import 'swiper/css/free-mode'
-
-import './global.css'
+import 'react-tooltip/dist/react-tooltip.css'
+import 'scss/global.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

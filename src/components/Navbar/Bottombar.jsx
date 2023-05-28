@@ -15,7 +15,7 @@ export const Bottombar = () => {
     <>
       <nav className="flex mx-10 my-5 items-center justify-between">
         <div className="flex py-2 px-20 ">
-          <ul className="flex flex-col gap-10 uppercase  font-bold text-sm tracking-widest">
+          <ul className="flex gap-10 uppercase  font-bold text-sm tracking-widest">
             {data.map(({ to, label }) => (
               <NavItem key={label} to={to} label={label} />
             ))}

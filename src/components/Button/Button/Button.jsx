@@ -1,10 +1,10 @@
 // @ts-nocheck
-export const Button = ({ text, onClick }) => {
+export const Button = ({ text, onClick, custom }) => {
   return (
     <>
       <button
         onClick={onClick}
-        className="bgGradient px-5 py-2 font-inter uppercase tracking-widest font-bold text-sm "
+        className={`flex py-2 px-5 h-[38px] rounded-3xl border border-white-08 bg-white-02  font-inter uppercase tracking-widest font-bold text-sm ${custom}`} 
       >
         {text}
       </button>
