@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|css|ts|tsx)\"",
     "format": "npm run prettier -- --write",
