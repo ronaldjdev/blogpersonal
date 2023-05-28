@@ -24,7 +24,7 @@ export const SocialMedia = () => {
           </div>
           <div className="flex" title="ronaldjdevfs@gmail.com" >
             <a href="mailto:eronald2009@gmail.com">
-              <SiGmail data-tooltip-id="gmail" data-tooltip-content="Gmail: eronaldjdevfs@gmail.com" className="text-4xl hover:fill-[#EA4335]  transition-colors duration-300" />
+              <SiGmail data-tooltip-id="gmail" data-tooltip-content="Gmail: ronaldjdevfs@gmail.com" className="text-4xl hover:fill-[#EA4335]  transition-colors duration-300" />
               <Tooltip className="first-line:" id="gmail" />
             </a>
           </div>

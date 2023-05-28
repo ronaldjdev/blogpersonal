@@ -81,25 +81,25 @@ export const Home = () => {
         <div className="grid place-items-center place-content-center grid-rows-2 grid-cols-2 gap-x-6">
           <div className="flex flex-col items-center ">
             <div>
-              <Title title="Lenguajes" size="text-md" />
+              <Title title="Lenguajes" size="text-2xl" />
             </div>
             <Grids />
           </div>
           <div className="flex flex-col items-center ">
             <div>
-              <Title title="Frameworks" size="text-md" />
+              <Title title="Frameworks" size="text-2xl" />
             </div>
             <Grids />
           </div>
           <div className="flex flex-col items-center ">
             <div>
-              <Title title="Librerias" size="text-md" />
+              <Title title="Librerias" size="text-2xl" />
             </div>
             <Grids />
           </div>
           <div className="flex flex-col items-center ">
             <div>
-              <Title title="Herramientas" size="text-md" />
+              <Title title="Herramientas" size="text-2xl" />
             </div>
             <Grids />
           </div>

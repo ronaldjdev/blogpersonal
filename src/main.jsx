@@ -4,7 +4,7 @@ import { RouterProvider } from 'react-router-dom'
 import { routes } from 'routes'
 import 'swiper/css/effect-coverflow'
 import 'react-tooltip/dist/react-tooltip.css'
-import './global.css'
+import 'scss/global.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
