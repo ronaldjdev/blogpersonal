@@ -9,14 +9,14 @@ import {
   Hero,
   InfoCard,
   Title,
-  UiService,
 } from 'components'
 import portal from 'assets/images/portal.png'
-import fade from 'assets/images/fade.png'
-import radar from 'assets/images/radar.png'
 import radar2 from 'assets/images/radar2.png'
 import ring from 'assets/images/ring.png'
-import circle from 'assets/images/circle.png'
+import backImg from 'assets/svg/back-img.svg'
+import apiImg from 'assets/svg/api-img.svg'
+import frontImg from 'assets/svg/front-img.svg'
+import uxUiImg from 'assets/svg/ux-ui.svg'
 import halo from 'assets/images/halo.png'
 
 export const Home = () => {
@@ -45,22 +45,27 @@ export const Home = () => {
         </div>
       </div>
       <div className="">
-        <UiService/>
+        <InfoCard
+          title="Diseño UX/UI"
+          description="Destaca la importancia del diseño de interfaz (UI) y cómo puede atraer y cautivar a los usuarios"
+          image={uxUiImg}
+          svg={uxUiImg}
+          
+        />
         <InfoCard
           title="Front-end"
           description="Potencia tu presencia en línea con un desarrollo frontend excepcional"
-          image={fade}
-        />
-        <InfoCard
-          title="Diseño UX/UI"
           imageOnRight
-          description="Destaca la importancia del diseño de interfaz (UI) y cómo puede atraer y cautivar a los usuarios"
-          image={fade}
+          image={frontImg}
+          svg={frontImg}
+
         />
         <InfoCard
           title="Back-end"
           description="Descubre el poder del desarrollo backend, la fuerza invisible que da vida y mantiene en funcionamiento las aplicaciones web"
-          image={fade}
+          image={apiImg}
+          // image={backImg}
+          svg={backImg}
         />
       </div>
 
