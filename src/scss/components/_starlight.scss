@@ -1,0 +1,32 @@
+@import "../keyframes/starlight1";
+@import "../abstracts/variables";
+
+
+
+.starlight {
+
+  height: 8px;
+  -webkit-mask-image: linear-gradient(to right, $gradient-colors);
+  mask-image: linear-gradient(to right, $gradient-colors);
+  opacity: 0.5;
+  position: absolute;
+  width: 180px;
+
+  &::before {
+    animation: 5s cubic-bezier(0.6, 0.6, 0, 1) infinite;
+    background: linear-gradient(to right, rgba($color-start, 0), $color-mid, rgba($color-end, 0));
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+
+  &:nth-child(1) {
+    right: 56px;
+    top: -1px;
+
+    &::before {
+      animation-name: starlight1;
+    }
+  }
+}

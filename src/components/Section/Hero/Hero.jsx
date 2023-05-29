@@ -13,8 +13,8 @@ export const Hero = () => {
               <Badge icon={<BsStars color="white" />} />
             </div>
             <Title
-              title="Experiencias digitales impactantes"
-              subtitle="Ven y descubre mi mundo"
+              title="Tienes una gran idea en mente"
+              subtitle="Discutamos lo que podemos lograr juntos"
             />
           </div>
         </div>
