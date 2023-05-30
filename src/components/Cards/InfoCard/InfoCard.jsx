@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactSVG } from 'react-svg'
 import circles from "assets/svg/css-gradient-examples.svg"
 import fade from 'assets/images/fade.png'
