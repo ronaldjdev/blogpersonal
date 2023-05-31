@@ -27,7 +27,7 @@ export const InfoCard = ({
           <img
             src={image}
             alt=""
-            className="absolute inset-0 m-auto mx-auto h-80 w-auto"
+            className="absolute inset-0 m-auto mx-auto h-80 w-auto "
           />
         )) ||
           (svg && (
