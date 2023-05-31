@@ -1,4 +1,5 @@
 // @ts-nocheck
+import React from 'react'
 import blackHole from 'assets/videos/black_hole.webm'
 import { Badge, Title } from 'components'
 import { BsStars } from 'react-icons/bs'

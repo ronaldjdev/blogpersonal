@@ -1,4 +1,5 @@
 // @ts-nocheck
+import React from 'react'
 import { Input } from './Input'
 import { TextArea } from './TextArea'
 import { Button } from 'components/Button/Button/Button'
@@ -24,7 +25,7 @@ export const Form = () => {
               <Input name="email" type="email" />
             </div>
             <div className="w-full">
-              <Input name="telefono" type="tel" pattern={true} />
+              <Input name="telefono" type="tel" pat={true} />
             </div>
           </div>
           <div>

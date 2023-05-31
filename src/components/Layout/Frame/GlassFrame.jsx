@@ -1,3 +1,6 @@
+import React from "react"
+import Proptypes from "prop-types"
+
 export const GlassFrame = ({ children }) => {
   return (
     <>
@@ -9,4 +12,9 @@ export const GlassFrame = ({ children }) => {
       </div>
     </>
   )
+}
+
+
+GlassFrame.propTypes = {
+  children: Proptypes.node
 }

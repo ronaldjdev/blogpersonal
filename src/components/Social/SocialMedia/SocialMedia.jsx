@@ -1,5 +1,6 @@
+import React from "react"
 import { Tooltip } from 'react-tooltip'
-import { FaGithubAlt, FaLinkedin, FaWhatsapp } from "react-icons/fa"
+import { FaGithubAlt, FaLinkedin } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { RiWhatsappFill } from "react-icons/ri"
 

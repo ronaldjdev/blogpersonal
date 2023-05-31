@@ -1,4 +1,9 @@
-export const Input = ({ name, type, pattern = false }) => (
+import React from "react"
+import PropTypes from "prop-types"
+export const Input = ({ name, type, pat = false }) => {
+  const pattern = '[0-9]{10}'
+  return(
+
   <>
     <div className="flex flex-col">
       <label className="capitalize font-inter font-light m-3" htmlFor={name}>
@@ -11,9 +16,15 @@ export const Input = ({ name, type, pattern = false }) => (
           type={type}
           name={name}
           id={name}
-          pattern={pattern && '[0-9]{10}'}
+          pattern={pat ? pattern : ""}
         />
       </div>
     </div>
   </>
-)
+)}
+
+Input.propTypes = {
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  pat: PropTypes.bool,
+}

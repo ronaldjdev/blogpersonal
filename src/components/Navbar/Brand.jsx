@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Brand = () => {
@@ -5,9 +6,9 @@ export const Brand = () => {
     <>
       <div className="flex">
         <Link to="/">
-          <a className="font-nano text-2xl ">
+          <h1 className="font-nano text-2xl ">
             <span className="bgText">ronald</span>
-          </a>
+          </h1>
         </Link>
       </div>
     </>

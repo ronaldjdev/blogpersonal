@@ -1,5 +1,5 @@
-import { Navbar } from 'components/Navbar/Navbar'
-import { Footer } from 'components/Section/Footer/Footer'
+import React from 'react'
+import { Navbar, Footer } from 'components'
 import { Outlet } from 'react-router-dom'
 
 export const Layout = () => {

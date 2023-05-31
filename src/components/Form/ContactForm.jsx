@@ -1,11 +1,8 @@
-// @ts-nocheck
+import React from 'react'
+// @ts-ignore
 import pulse from 'assets/videos/pulse.webm'
-import { GlassFrame } from 'components/Layout/Frame/GlassFrame'
+import { GlassFrame, Form, Map, SocialMedia, Title } from 'components'
 
-import { Form } from './Form'
-import { Map } from 'components/Map/Map'
-import { SocialMedia } from 'components/Social/SocialMedia/SocialMedia'
-import { Title } from 'components/Section/Title/Title'
 
 export const ContactForm = () => {
   return (
@@ -25,7 +22,7 @@ export const ContactForm = () => {
           <GlassFrame>
             <div className="flex gap-5">
               <div className="flex flex-col gap-5 items-center w-1/2">
-                <Title title="Social Media" size="text-2xl" />
+                <Title title="Social Media" size="text-2xl"  />
                 <SocialMedia />
                 <Title title="Direccion" size="text-2xl" />
                 <Map />

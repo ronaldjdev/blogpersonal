@@ -1,5 +1,6 @@
-// @ts-nocheck
-// import style from "../style.module.css"
+import React from 'react';
+import PropTypes from 'prop-types';
+
 export const Badge = ({ icon }) => {
   return (
     <>
@@ -8,4 +9,8 @@ export const Badge = ({ icon }) => {
       </a>
     </>
   )
+}
+
+Badge.propTypes = {
+  icon: PropTypes.element.isRequired,
 }

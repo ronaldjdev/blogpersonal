@@ -1,3 +1,6 @@
+import React from "react"
+import PropTypes from 'prop-types'
+
 export const TextArea = ({ name }) => (
   <>
     <div className="flex flex-col ">
@@ -17,3 +20,7 @@ export const TextArea = ({ name }) => (
     </div>
   </>
 )
+
+TextArea.propTypes = {
+  name: PropTypes.string.isRequired,
+}
