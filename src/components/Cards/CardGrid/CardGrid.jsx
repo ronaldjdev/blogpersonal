@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export const CardGrid = ({ icon, title }) => {
   return (
@@ -20,5 +20,5 @@ export const CardGrid = ({ icon, title }) => {
 
 CardGrid.propTypes = {
   icon: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 }

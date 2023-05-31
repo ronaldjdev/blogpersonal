@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React from "react"
+import React from 'react'
 
 import {
   AboutMe,
@@ -52,7 +52,6 @@ export const Home = () => {
           description="Destaca la importancia del diseño de interfaz (UI) y cómo puede atraer y cautivar a los usuarios"
           image={uxUiImg}
           svg={uxUiImg}
-          
         />
         <InfoCard
           title="Front-end"
@@ -60,7 +59,6 @@ export const Home = () => {
           imageOnRight
           image={frontImg}
           svg={frontImg}
-
         />
         <InfoCard
           title="Back-end"

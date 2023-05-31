@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export const Container = ({ children }) => {
   return (
@@ -10,5 +10,5 @@ export const Container = ({ children }) => {
 }
 
 Container.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 }

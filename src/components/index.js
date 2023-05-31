@@ -1,6 +1,8 @@
 export { Badge } from 'components/Button/Badge/Badge'
 export { Button } from 'components/Button/Button/Button'
 export { CardGrid } from 'components/Cards/CardGrid/CardGrid'
+export { FeatureCard } from 'components/Cards/FeatureCard/FeatureCard'
+export { FeatureCardContent } from 'components/Cards/FeatureCard/FeatureCardContent'
 export { InfoCard } from 'components/Cards/InfoCard/InfoCard'
 export { Error404 } from 'components/Error/Error404'
 export { ContactForm } from 'components/Form/ContactForm'

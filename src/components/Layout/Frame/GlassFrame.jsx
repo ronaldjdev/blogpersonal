@@ -1,5 +1,5 @@
-import React from "react"
-import Proptypes from "prop-types"
+import React from 'react'
+import Proptypes from 'prop-types'
 
 export const GlassFrame = ({ children }) => {
   return (
@@ -14,7 +14,6 @@ export const GlassFrame = ({ children }) => {
   )
 }
 
-
 GlassFrame.propTypes = {
-  children: Proptypes.node
+  children: Proptypes.node,
 }

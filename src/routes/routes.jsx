@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 import { Error404, Layout } from 'components'
 import { Contact, Home, Profile, Project, Skills } from 'pages'

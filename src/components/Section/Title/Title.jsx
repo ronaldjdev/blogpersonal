@@ -1,6 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
-
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export const Title = ({ title, subtitle, size }) => {
   const customSize = 'text-xl md:text-5xl'
@@ -8,8 +7,9 @@ export const Title = ({ title, subtitle, size }) => {
     <>
       <div className="flex flex-col items-center mx-auto">
         <h1
-          className={`m-1 text- text-center md:leading-[5rem] ${size ? size : customSize
-            }`}
+          className={`m-1 text- text-center md:leading-[5rem] ${
+            size ? size : customSize
+          }`}
         >
           <span className="bgText font-poppins font-semibold ">{title}</span>
         </h1>
@@ -21,10 +21,8 @@ export const Title = ({ title, subtitle, size }) => {
   )
 }
 
-
 Title.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   size: PropTypes.string,
-
 }

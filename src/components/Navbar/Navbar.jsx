@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { Brand, NavItem } from 'components'
 
 export const Navbar = () => {

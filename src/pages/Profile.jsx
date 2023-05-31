@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react'
 
 import {
-//   AboutMe,
-//   ContactForm,
+  //   AboutMe,
+  //   ContactForm,
   Container,
-//   GlassFrame,
-//   GridSwiper,
-//   Grids,
-//   Hero,
-//   InfoCard,
-//   Title,
+  //   GlassFrame,
+  //   GridSwiper,
+  //   Grids,
+  //   Hero,
+  //   InfoCard,
+  //   Title,
 } from 'components'
 // import portal from 'assets/images/portal.png'
 // import fade from 'assets/images/fade.png'

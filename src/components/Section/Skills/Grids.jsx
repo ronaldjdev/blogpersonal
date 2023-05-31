@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 // import PropTypes from "prop-types"
 import { CardGrid } from 'components'
 import { FaPython } from 'react-icons/fa'
@@ -25,7 +25,6 @@ export const Grids = () => {
     </>
   )
 }
-
 
 // Grids.propTypes = {
 //   data: PropTypes.array

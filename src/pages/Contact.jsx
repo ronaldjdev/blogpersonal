@@ -1,11 +1,7 @@
 // @ts-nocheck
-import React from "react"
+import React from 'react'
 
-import {
-  ContactForm,
-  Container,
-  Title,
-} from 'components'
+import { ContactForm, Container, Title } from 'components'
 import ring from 'assets/images/ring.png'
 
 export const Contact = () => {

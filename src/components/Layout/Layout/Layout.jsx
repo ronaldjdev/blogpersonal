@@ -2,12 +2,19 @@
 import React from 'react'
 import { Navbar, Footer } from 'components'
 import { Outlet } from 'react-router-dom'
-import stars2 from "assets/images/stars2.png"
+import stars2 from 'assets/images/stars2.png'
 
 export const Layout = () => {
   return (
     <>
-      <div className="flex flex-col w-full min-h-screen" style={{ backgroundImage: `url(${stars2})`, backgroundColor:" #030014 ", backgroundPosition:"50%" }}>
+      <div
+        className="flex flex-col w-full min-h-screen"
+        style={{
+          backgroundImage: `url(${stars2})`,
+          backgroundColor: ' #030014 ',
+          backgroundPosition: '50%',
+        }}
+      >
         <header>
           <Navbar />
         </header>
