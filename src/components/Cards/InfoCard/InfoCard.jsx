@@ -1,5 +1,8 @@
+// @ts-nocheck
 import { ReactSVG } from 'react-svg'
-import circles from "assets/images/css-gradient-examples.svg"
+import circles from "assets/svg/css-gradient-examples.svg"
+import fade from 'assets/images/fade.png'
+
 export const InfoCard = ({
   image,
   title,
@@ -9,19 +12,32 @@ export const InfoCard = ({
   extend,
   titleClassName,
   descClassName,
+  svg
 }) => {
   return (
     <div className={`flex flex-col md:flex-row bg-${background}-200 ${extend}`}>
       <div
-        className={`w-full md:w-1/2 md:h-[630px] ${
+        className={`w-full flex flex-col justify-center items-center relative md:w-1/2 md:h-[630px] ${
           !imageOnRight
             ? 'order-last md:order-first'
             : 'order-last md:order-last'
         }`}
       >
-        {image && (
-          <img src={image} alt="" className="w-full h-full object-contain" />
-        )}
+        {(image && (
+          <img
+            src={image}
+            alt=""
+            className="absolute inset-0 m-auto mx-auto h-80 w-auto "
+          />
+        )) ||
+          (svg && (
+            <ReactSVG
+              src={svg}
+              className="absolute inset-0 m-auto mx-auto h-80 w-auto"
+            />
+          ))}
+          <img src={fade} alt="" className="w-full h-full object-contain" />
+
       </div>
       <div
         className={`w-full p-4 md:w-1/2 ${
