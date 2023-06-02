@@ -80,7 +80,6 @@ export const Home = () => {
           />
         </div>
       </div>
-
       <div
         className="flex justify-center items-center mb-40 pb-5"
         style={{ background: `url(${radar2})`, backgroundPosition: 'center' }}

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react'
-import { Container, FeatureCard, Title } from 'components'
-import halo from 'assets/images/halo.png'
+import { Container, FeatureCard, SearchBar, Title } from 'components'
+import stars2 from 'assets/images/stars2.png'
 
 const data = [
   {
@@ -48,37 +48,47 @@ const data = [
     image: 'https://swiperjs.com/demos/images/nature-9.jpg',
     title: 'Título 9',
     description: 'Descripción corta 9',
-  }
-];
+  },
+]
 
 export const Project = () => {
   return (
     <>
-      <Container>
-        <div className="relative flex flex-col items-center">
-          <img className="w-[800px]" src={halo} />
-          <div className="absolute inset-80 mt-20 mb-40">
-            <Title
-              title="Proyectos"
-              subtitle="Transformando Ideas en Realidad."
-            />
+      <Container pages>
+        <div className="relative">
+          <div className="absolute z-0 w-full bg-hero-page inset-x-0 -top-20 h-[800px]"></div>
+          <div className="relative h-[500px] z-10 flex flex-col justify-center items-center">
+            <div className="">
+              <Title
+                title="Creando productos digitales innovadores"
+                subtitle="Llevando la experiencia digital al siguiente nivel."
+              />
+            </div>
+            <div className="flex items-center"><SearchBar /></div>
           </div>
-        </div>
-        <div className="flex flex-wrap mb-40">
-          {
-            data.map(({ image, title, description }, index) => (
-              <div
-                key={index}
-                className={`${(index + 3) % 3 === 0 ? 'w-full' : 'w-1/2'}`}
-              >
-                <FeatureCard
-                  image={image}
-                  title={title}
-                  description={description}
-                />
-              </div>
-            ))
-          }
+          <div
+            className="relative flex flex-col z-10 rounded-t-[40px] px-10 py-12 w-full"
+            style={{
+              backgroundImage: `url(${stars2})`,
+              backgroundColor: ' #030014 ',
+              backgroundPosition: '50%',
+            }}
+          >
+            <div className="flex w-full justify-center  flex-wrap mb-40">
+              {data.map(({ image, title, description }, index) => (
+                <div
+                  key={index}
+                  className={`${(index + 3) % 3 === 0 ? 'w-full' : 'w-1/2'}`}
+                >
+                  <FeatureCard
+                    image={image}
+                    title={title}
+                    description={description}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </Container>
     </>

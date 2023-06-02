@@ -8,20 +8,20 @@ export const Layout = () => {
   return (
     <>
       <div
-        className="flex flex-col w-full min-h-screen"
+        className="flex flex-col items-center m-0 w-full min-h-screen"
         style={{
           backgroundImage: `url(${stars2})`,
           backgroundColor: ' #030014 ',
           backgroundPosition: '50%',
         }}
       >
-        <header>
+        <header className="w-full realtive z-10">
           <Navbar />
         </header>
-        <main className="flex-1 h-full pb-32">
+        <main className="flex items-center px-0 justify-center w-full h-full pb-32">
           <Outlet />
         </main>
-        <footer>
+        <footer className="w-full">
           <Footer />
         </footer>
       </div>

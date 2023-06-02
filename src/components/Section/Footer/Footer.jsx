@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React from 'react'
 import { GlassFrame } from 'components/Layout/Frame/GlassFrame'
-import { Bottombar } from 'components/Navbar/Bottombar'
-import { Brand } from 'components/Navbar/Brand'
+import { Bottombar } from 'components/Bar/Navbar/Bottombar'
+import { Brand } from 'components/Bar/Navbar/Brand'
 import portal2 from 'assets/images/portal2.png'
 
 export const Footer = () => {

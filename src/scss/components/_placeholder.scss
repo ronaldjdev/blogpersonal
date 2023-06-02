@@ -1,0 +1,10 @@
+.placeholder {
+  &::placeholder{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color:#ffffff78;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+  }
+}
