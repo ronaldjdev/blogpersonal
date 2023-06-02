@@ -1,8 +1,11 @@
+import React from 'react'
+
 import { Error404, Layout } from 'components'
 import { Contact, Home, Profile, Project, Skills } from 'pages'
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
+// import { createBrowserRouter } from 'react-router-dom'
 
-export const routes = createBrowserRouter([
+export const routes = createHashRouter([
   {
     path: '/',
     element: <Layout />,

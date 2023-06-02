@@ -1,4 +1,5 @@
 // @ts-nocheck
+import React from 'react'
 import { Button } from 'components/Button/Button/Button'
 import cvPdf from 'assets/CV.pdf'
 

@@ -1,3 +1,6 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
 export const Title = ({ title, subtitle, size }) => {
   const customSize = 'text-xl md:text-5xl'
   return (
@@ -16,4 +19,10 @@ export const Title = ({ title, subtitle, size }) => {
       </div>
     </>
   )
+}
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  size: PropTypes.string,
 }

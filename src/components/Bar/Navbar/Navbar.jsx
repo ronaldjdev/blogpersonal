@@ -1,6 +1,5 @@
-import { Button } from 'components/Button/Button/Button'
-import { Brand } from './Brand'
-import { NavItem } from './NavItem'
+import React from 'react'
+import { Brand, NavItem } from 'components'
 
 export const Navbar = () => {
   const data = [

@@ -1,22 +1,18 @@
-// @ts-nocheck
+import React from 'react'
+// @ts-ignore
 import pulse from 'assets/videos/pulse.webm'
-import { GlassFrame } from 'components/Layout/Frame/GlassFrame'
-
-import { Form } from './Form'
-import { Map } from 'components/Map/Map'
-import { SocialMedia } from 'components/Social/SocialMedia/SocialMedia'
-import { Title } from 'components/Section/Title/Title'
+import { GlassFrame, Form, Map, SocialMedia, Title } from 'components'
 
 export const ContactForm = () => {
   return (
     <>
       <div
         className="rounded-3xl w-full flex items-center justify-center relative"
-      // style={{
-      //   background: `url(${portal2})`,
-      //   backgroundPosition: 'bottom',
-      //   backgroundSize: 'cover',
-      // }}
+        // style={{
+        //   background: `url(${portal2})`,
+        //   backgroundPosition: 'bottom',
+        //   backgroundSize: 'cover',
+        // }}
       >
         <div className="flex items-center absolute z-0 w-full inset-6 object-cover">
           <video className="w-full object-fill  " autoPlay loop src={pulse} />

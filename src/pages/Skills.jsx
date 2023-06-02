@@ -1,9 +1,7 @@
 // @ts-nocheck
-import {
-  Container,
-  Grids,
-  Title,
-} from 'components'
+import React from 'react'
+
+import { Container, Grids, Title } from 'components'
 import radar2 from 'assets/images/radar2.png'
 import ring from 'assets/images/ring.png'
 

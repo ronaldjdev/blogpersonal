@@ -24,7 +24,8 @@
     border-radius: inherit;
     content: '';
     inset: 0;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: xor;
     -webkit-mask-composite: xor;
@@ -68,3 +69,27 @@
     0px 0px 5.8296px #320085, 0px 0px 2.9148px #320085, 0px 0px 0.8328px #320085,
     0px 0px 0.4164px #320085;
 }
+
+.bg-hero-page {
+  background: linear-gradient(
+    217deg,
+    hsla(249, 100%, 4%, 1) 13%,
+    hsla(274, 68%, 38%, 1) 55%,
+    hsla(285, 50%, 74%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    217deg,
+    hsla(249, 100%, 4%, 1) 13%,
+    hsla(274, 68%, 38%, 1) 55%,
+    hsla(285, 50%, 74%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    217deg,
+    hsla(249, 100%, 4%, 1) 13%,
+    hsla(274, 68%, 38%, 1) 55%,
+    hsla(285, 50%, 74%, 1) 100%
+  );
+}
+

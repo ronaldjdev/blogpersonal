@@ -1,4 +1,6 @@
 // @ts-nocheck
+import React from 'react'
+
 import {
   AboutMe,
   ContactForm,
@@ -50,7 +52,6 @@ export const Home = () => {
           description="Destaca la importancia del diseño de interfaz (UI) y cómo puede atraer y cautivar a los usuarios"
           image={uxUiImg}
           svg={uxUiImg}
-          
         />
         <InfoCard
           title="Front-end"
@@ -58,7 +59,6 @@ export const Home = () => {
           imageOnRight
           image={frontImg}
           svg={frontImg}
-
         />
         <InfoCard
           title="Back-end"
@@ -80,7 +80,6 @@ export const Home = () => {
           />
         </div>
       </div>
-
       <div
         className="flex justify-center items-center mb-40 pb-5"
         style={{ background: `url(${radar2})`, backgroundPosition: 'center' }}

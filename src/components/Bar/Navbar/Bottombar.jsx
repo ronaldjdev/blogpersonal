@@ -1,5 +1,4 @@
-import { Button } from 'components/Button/Button/Button'
-import { Brand } from './Brand'
+import React from 'react'
 import { NavItem } from './NavItem'
 
 export const Bottombar = () => {
