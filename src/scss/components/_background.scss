@@ -72,45 +72,24 @@
 
 .bg-hero-page {
   background: linear-gradient(
-    225deg,
-    hsla(249, 100%, 4%, 1) 0%,
-    hsla(274, 68%, 38%, 1) 50%,
+    217deg,
+    hsla(249, 100%, 4%, 1) 13%,
+    hsla(274, 68%, 38%, 1) 55%,
     hsla(285, 50%, 74%, 1) 100%
   );
+
   background: -moz-linear-gradient(
-    225deg,
-    hsla(249, 100%, 4%, 1) 0%,
-    hsla(274, 68%, 38%, 1) 50%,
+    217deg,
+    hsla(249, 100%, 4%, 1) 13%,
+    hsla(274, 68%, 38%, 1) 55%,
     hsla(285, 50%, 74%, 1) 100%
   );
+
   background: -webkit-linear-gradient(
-    225deg,
-    hsla(249, 100%, 4%, 1) 0%,
-    hsla(274, 68%, 38%, 1) 50%,
+    217deg,
+    hsla(249, 100%, 4%, 1) 13%,
+    hsla(274, 68%, 38%, 1) 55%,
     hsla(285, 50%, 74%, 1) 100%
   );
 }
 
-.bg-button {
-  overflow: hidden;
-  &:hover {
-    &::after {
-      background-color: white;
-      border-radius: 50%;
-      bottom: -100%;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: -100%;
-      transform: scaleY(0);
-      transform-origin: bottom;
-      transition: color, background-color, border-color, text-decoration-color,
-        fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter,
-        -webkit-text-decoration-color,
-        -webkit-backdrop-filter 1s cubic-bezier(0.14, 0, 0, 1.01);
-      will-change: transform;
-      z-index: -1;
-    }
-  }
-}
