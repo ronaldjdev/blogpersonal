@@ -8,11 +8,12 @@ export const Button = ({ text, onClick, custom, icon, link }) => {
       <Link to={link}>
         <button
           onClick={onClick}
-          className={`flex py-2 px-5 h-[38px] w-auto m-0 items-center justify-center rounded-3xl border border-white-08 bg-white-02 hover:text-rich-black font-inter uppercase tracking-widest font-bold text-sm ${custom} bg-button`}
-        ><span className="text-inherit">            
-          {text}
-          {icon}
-        </span>
+          className={`flex py-2 px-5 h-[38px] w-auto m-0 items-center justify-center rounded-3xl border border-white-08 bg-white-02 font-inter uppercase tracking-widest font-bold text-sm ${custom} bg-button`}
+        >
+          <span className="text-inherit">
+            {text}
+            {icon}
+          </span>
         </button>
       </Link>
     </>

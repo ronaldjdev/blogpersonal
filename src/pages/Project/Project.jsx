@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react'
-import { Container, FeatureCard, SearchBar, Title } from 'components'
+import { Container, FeatureCard, Paginated, SearchBar, Title } from 'components'
 import stars2 from 'assets/images/stars2.png'
 
 const data = [
@@ -64,7 +64,9 @@ export const Project = () => {
                 subtitle="Llevando la experiencia digital al siguiente nivel."
               />
             </div>
-            <div className="flex items-center"><SearchBar /></div>
+            <div className="flex items-center">
+              <SearchBar />
+            </div>
           </div>
           <div
             className="relative flex flex-col z-10 rounded-t-[40px] px-10 py-12 w-full"
@@ -72,9 +74,8 @@ export const Project = () => {
               backgroundImage: `url(${stars2})`,
               backgroundColor: ' #030014 ',
               backgroundPosition: '50%',
-            }}
-          >
-            <div className="flex w-full justify-center  flex-wrap mb-40">
+            }}>
+            <div className="flex w-full justify-center gap-y-6 flex-wrap ">
               {data.map(({ image, title, description }, index) => (
                 <div
                   key={index}
@@ -87,6 +88,9 @@ export const Project = () => {
                   />
                 </div>
               ))}
+            </div>
+            <div className='my-10'>
+              <Paginated />
             </div>
           </div>
         </div>
