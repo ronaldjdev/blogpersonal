@@ -43,6 +43,7 @@
       color: $bg-primary !important;
       svg {
         stroke: $bg-primary !important;
+        stroke-width: 4px;
         transition: 0.3s ease-in-out all;
       }
     }
