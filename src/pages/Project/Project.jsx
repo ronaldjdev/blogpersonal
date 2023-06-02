@@ -64,7 +64,9 @@ export const Project = () => {
                 subtitle="Llevando la experiencia digital al siguiente nivel."
               />
             </div>
-            <div className="flex items-center"><SearchBar /></div>
+            <div className="flex items-center">
+              <SearchBar />
+            </div>
           </div>
           <div
             className="relative flex flex-col z-10 rounded-t-[40px] px-10 py-12 w-full"
@@ -74,7 +76,7 @@ export const Project = () => {
               backgroundPosition: '50%',
             }}
           >
-            <div className="flex w-full justify-center  flex-wrap mb-40">
+            <div className="flex w-full justify-center gap-y-6 flex-wrap mb-40">
               {data.map(({ image, title, description }, index) => (
                 <div
                   key={index}

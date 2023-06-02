@@ -5,9 +5,14 @@ export const Input = ({ name, type, pat = false, notLabel, placeholder }) => {
   return (
     <>
       <div className="flex flex-col">
-        {!notLabel && <label className="capitalize font-inter font-light m-3" htmlFor={name}>
-          {name}:
-        </label>}
+        {!notLabel && (
+          <label
+            className="capitalize font-inter font-light m-3"
+            htmlFor={name}
+          >
+            {name}:
+          </label>
+        )}
         <div className="relative w-full">
           <div className="starlight "> </div>
           <input
