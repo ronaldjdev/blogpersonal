@@ -1,0 +1,21 @@
+.hero {
+  padding-top: 173px;
+  position: relative;
+  &::before {
+    background: radial-gradient(
+      37.74% 81.78% at 50% 26.56%,
+      #9465ff14 0%,
+      #03001400 100%
+    );
+    content: '';
+    display: block;
+    height: 900px;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: -173px;
+    transform: translate(-50%);
+    width: 1240px;
+    z-index: 1;
+  }
+}
