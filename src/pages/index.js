@@ -1,6 +1,0 @@
-export { Contact } from 'pages/Contact'
-export { Home } from 'pages/Home'
-export { Profile } from 'pages/Profile'
-export { Project } from 'pages/Project/Project'
-export { ProjectDetail } from 'pages/Project/ProjectDetail'
-export { Skills } from 'pages/Skills'
