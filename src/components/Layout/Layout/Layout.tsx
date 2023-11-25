@@ -7,14 +7,14 @@ export const Layout = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center m-0 w-full min-h-screen"
+        className="flex flex-col items-center m-0 max-w-screen h-full"
         style={{
           backgroundImage: `url(${stars2})`,
           backgroundColor: ' #030014 ',
           backgroundPosition: '50%',
         }}
       >
-        <header className="w-full realtive z-10">
+        <header className="flex items-center justify-center w-full realtive z-10">
           <Navbar />
         </header>
         <main className="flex items-center px-0 justify-center w-full h-full pb-32">

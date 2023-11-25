@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 import typography from "@tailwindcss/typography";
 export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx }"],
+	content: [
+		"./index.html",
+		"./src/**/*.{ts,tsx}"
+	],
 	theme: {
 		fontFamily: {
 			inter: ["Inter", "sans-serif"],

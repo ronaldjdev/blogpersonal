@@ -1,5 +1,6 @@
 import blackHole from 'assets/videos/black_hole.webm'
 import { Badge } from 'components/Button/Badge/Badge'
+import { Particles } from 'components/Particles/Particles'
 import { Title } from '../Title/Title'
 import { BsStars } from 'react-icons/bs'
 
@@ -19,6 +20,7 @@ export const Hero = () => {
           </div>
         </div>
         <video className="object-cover" autoPlay loop src={blackHole} />
+        <Particles />
       </section>
     </>
   )
