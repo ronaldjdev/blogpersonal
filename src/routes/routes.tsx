@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Error404 } from 'components/Error/Error404';
 import { Layout } from 'components/Layout/Layout/Layout';
 import { Contact } from 'pages/Contact';
-import { Home } from 'pages/Home';
+import { Home } from 'components/Section/Services/Services';
 import { Profile } from 'pages/Profile';
 import { Project } from 'pages/Project/Project';
 import { Skills } from 'pages/Skills';

@@ -1,7 +1,6 @@
 import { Container } from 'components/Layout/Container/Container'
 import { Title } from 'components/Section/Title/Title'
-import { Grids } from 'components/Section/Skills/Grids'
-import radar2 from 'assets/images/radar2.png'
+import { Timeline } from 'components/Section/Timeline/Timeline'
 import ring from 'assets/images/ring.png'
 
 export const Skills = () => {
@@ -18,37 +17,7 @@ export const Skills = () => {
           </div>
         </div>
 
-        <div
-          className="flex justify-center items-center mb-40 pb-5"
-          style={{ background: `url(${radar2})`, backgroundPosition: 'center' }}
-        >
-          <div className="grid place-items-center place-content-center grid-rows-2 grid-cols-2 gap-x-6">
-            <div className="flex flex-col items-center ">
-              <div>
-                <Title title="Lenguajes" size="text-2xl" />
-              </div>
-              <Grids />
-            </div>
-            <div className="flex flex-col items-center ">
-              <div>
-                <Title title="Frameworks" size="text-2xl" />
-              </div>
-              <Grids />
-            </div>
-            <div className="flex flex-col items-center ">
-              <div>
-                <Title title="Librerias" size="text-2xl" />
-              </div>
-              <Grids />
-            </div>
-            <div className="flex flex-col items-center ">
-              <div>
-                <Title title="Herramientas" size="text-2xl" />
-              </div>
-              <Grids />
-            </div>
-          </div>
-        </div>
+        <Timeline />
       </Container>
     </>
   )
