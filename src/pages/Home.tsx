@@ -1,12 +1,13 @@
-import { AboutMe } from 'components/Section/AboutMe/AboutMe'
 import { ContactForm } from 'components/Form/ContactForm'
 import { Container } from 'components/Layout/Container/Container'
 import { GlassFrame } from 'components/Layout/Frame/GlassFrame'
-import { Title } from 'components/Section/Title/Title'
 import { InfoCard } from 'components/Cards/InfoCard/InfoCard'
-import { Hero } from 'components/Section/Hero/Hero'
 import { GridSwiper } from 'components/Grid/GridSwiper'
+import { AboutMe } from 'components/Section/AboutMe/AboutMe'
+import { Title } from 'components/Section/Title/Title'
+import { Hero } from 'components/Section/Hero/Hero'
 import { Grids } from 'components/Section/Skills/Grids'
+import { Timeline } from 'components/Section/Timeline/Timeline'
 
 import portal from 'assets/images/portal.png'
 import radar2 from 'assets/images/radar2.png'
@@ -76,6 +77,7 @@ export const Home = () => {
           />
         </div>
       </div>
+      <Timeline/>
       <div
         className="flex justify-center items-center mb-40 pb-5"
         style={{ background: `url(${radar2})`, backgroundPosition: 'center' }}
