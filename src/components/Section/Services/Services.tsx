@@ -2,8 +2,8 @@ import { InfoCard } from 'components/Cards/InfoCard/InfoCard';
 import { Title } from 'components/Section/Title/Title';
 import portal from 'assets/images/portal.png';
 import backImg from 'assets/svg/back-img.svg';
-import frontImg from 'assets/svg/front-img.svg';
-import uxUiImg from 'assets/svg/ux-ui.svg';
+import frontImg from 'assets/svg/front.svg';
+import uxUiImg from 'assets/svg/ux_ui.svg';
 
 
 export const Services = () => {

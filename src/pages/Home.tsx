@@ -1,6 +1,6 @@
 import { Container } from 'components/Layout/Container/Container'
 import { GlassFrame } from 'components/Layout/Frame/GlassFrame'
-import { GridSwiper } from 'components/Grid/GridSwiper'
+import { ProjectSlider } from 'components/Slider/ProjectSlider'
 import { AboutMe } from 'components/Section/AboutMe/AboutMe'
 import { Title } from 'components/Section/Title/Title'
 import { Hero } from 'components/Section/Hero/Hero'
@@ -45,7 +45,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="mb-40">
-        <GridSwiper />
+        <ProjectSlider />
       </div>
 
       {/* Info ContactForm */}
