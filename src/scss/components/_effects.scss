@@ -2,8 +2,8 @@
 
 .bg-button {
   overflow: hidden;
-  transition: 0.3s ease all;
   position: relative;
+  transition: 0.3s ease all;
 
   span {
     position: relative;
@@ -52,6 +52,94 @@
     }
     &::before {
       bottom: 0;
+    }
+  }
+}
+
+.bg-button-project {
+  overflow: hidden;
+  transition: 0.3s ease all;
+  position: relative;
+
+  span {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.3s ease all;
+    border-radius: 100px;
+    svg {
+      // stroke: $bg-primary !important;
+      transition: 0.7s ease-in-out all;
+      stroke-width: 2px;
+    }
+    .svg {
+      transform: translate(-50px, 50px);
+      transition: transform 0.5s;
+      position: absolute;
+      transition: 0.7s ease-in-out all;
+      fill: $bg-primary;
+      stroke-width: 2px;
+      stroke: $bg-primary !important;
+    }
+    &::before {
+      content: '';
+      background: #ffffff;
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      z-index: 0;
+      border-radius: 24px;
+      transition: 0.5s ease-in-out all;
+    }
+  }
+  &::after,
+  &::before {
+    content: '';
+    background: #ffffff26;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 1000px;
+    transition: 0.5s ease-in-out all;
+  }
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    right: 0;
+    bottom: 0;
+  }
+  &:hover {
+    span {
+      color: $bg-primary !important;
+      // background: #ffffff;
+      border-radius: 100px;
+      transition: 0.7s ease-in-out all;
+      svg {
+        transform: translate(50px, -50px);
+        transition: transform 0.5s;
+      }
+      .svg {
+        transform: translate(0px, 0px);
+        transition: transform 0.5s;
+        position: absolute;
+        transition: 0.7s ease-in-out all;
+      }
+      &::before {
+        transition: 0.7s ease-in-out all;
+        transform: scale(100);
+      }
+    }
+    &::after {
+      transition: transform 0.7s ease-in-out;
+      transform: scale(3000);
+    }
+    &::before {
+      transition: transform 0.7s ease-in-out;
+      transform: scale(3000);
     }
   }
 }

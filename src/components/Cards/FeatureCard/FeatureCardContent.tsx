@@ -1,14 +1,15 @@
 import { TfiArrowTopRight } from 'react-icons/tfi'
-
+import { Link } from 'react-router-dom'
 interface Props {
   title: string
   description: string
+  url: string
 }
-export const FeatureCardContent = ({ title, description }: Partial<Props>) => {
+export const FeatureCardContent = ({ title, description, url }: Partial<Props>) => {
   return (
     <>
-      <div className="flex p-3 w-full overflow-hidden rounded-3xl">
-        <div className="flex flex-col w-full">
+      <Link to={url ? url : '#'} className="flex p-9 w-full rounded-3xl bg-button-project">
+        <div className="flex flex-col w-3/4">
           <h1 className="text-2xl uppercase tracking-widest font-poppins font-bold bgText">
             {title}
           </h1>
@@ -16,10 +17,13 @@ export const FeatureCardContent = ({ title, description }: Partial<Props>) => {
             {description}
           </p>
         </div>
-        <div className="flex flex-col items-center">
-          <TfiArrowTopRight className="text-3xl" />
+        <div className="w-1/4 h-full flex flex-col items-end justify-start">
+          <span className="flex flex-col items-center justify-center p-4 relative ">
+            <TfiArrowTopRight className="text-2xl" />
+            <TfiArrowTopRight className="text-2xl svg" />
+          </span>
         </div>
-      </div>
+      </Link>
     </>
   )
 }
