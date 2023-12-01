@@ -3,8 +3,9 @@ interface Props {
   type: string
   pat: boolean
   notLabel: boolean
-  placeholder: string
+  placeholder:  boolean
   onChange: (e) => void
+  value: string
 }
 export const Input = ({
   name,
@@ -13,6 +14,7 @@ export const Input = ({
   notLabel,
   placeholder,
   onChange,
+  value
 }: Partial<Props>) => {
   const pattern = '[0-9]{10}'
   return (
@@ -31,11 +33,12 @@ export const Input = ({
           <input
             className={`bg-inherit border border-white-08 text-center w-full rounded-3xl focus:outline outline-1 outline-purple-600 outline-offset-2 p-2 placeholder`}
             type={type}
-            placeholder={placeholder && name}
+            placeholder={placeholder ? name: ''}
             name={name}
             id={name}
             pattern={pat ? pattern : ''}
             onChange={onChange}
+            value={value}
           />
         </div>
       </div>

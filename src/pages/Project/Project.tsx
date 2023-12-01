@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Container } from 'components/Layout/Container/Container'
 import { FeatureCard } from 'components/Cards/FeatureCard/FeatureCard'
 import { Paginated } from 'components/Paginated/Paginated'
@@ -8,52 +9,57 @@ import stars2 from 'assets/images/stars2.png'
 const data = [
   {
     image: 'https://swiperjs.com/demos/images/nature-1.jpg',
-    title: 'Título 1',
+    title: 'titulo 1',
     description: 'Descripción corta 1',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-2.jpg',
-    title: 'Título 2',
+    title: 'titulo 2',
     description: 'Descripción corta 2',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-3.jpg',
-    title: 'Título 3',
+    title: 'titulo 3',
     description: 'Descripción corta 3',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-4.jpg',
-    title: 'Título 4',
+    title: 'titulo 4',
     description: 'Descripción corta 4',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-5.jpg',
-    title: 'Título 5',
+    title: 'titulo 5',
     description: 'Descripción corta 5',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-6.jpg',
-    title: 'Título 6',
+    title: 'titulo 6',
     description: 'Descripción corta 6',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-7.jpg',
-    title: 'Título 7',
+    title: 'titulo 7',
     description: 'Descripción corta 7',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-8.jpg',
-    title: 'Título 8',
+    title: 'titulo 8',
     description: 'Descripción corta 8',
   },
   {
     image: 'https://swiperjs.com/demos/images/nature-9.jpg',
-    title: 'Título 9',
+    title: 'titulo 9',
     description: 'Descripción corta 9',
   },
 ]
 
 export const Project = () => {
+  const [filteredData, setFilteredData] = useState(data);
+
+  const handleSearch = (filteredData) => {
+    setFilteredData(filteredData);
+  };
   return (
     <>
       <Container pages>
@@ -67,7 +73,7 @@ export const Project = () => {
               />
             </div>
             <div className="flex items-center">
-              <SearchBar />
+              <SearchBar data={data} onSearch={handleSearch} />
             </div>
           </div>
           <div
@@ -79,7 +85,7 @@ export const Project = () => {
             }}
           >
             <div className="flex w-full justify-center gap-y-6 flex-wrap ">
-              {data.map(({ image, title, description }, index) => (
+              {filteredData.map(({ image, title, description }, index) => (
                 <div
                   key={index}
                   className={`${(index + 3) % 3 === 0 ? 'w-full' : 'w-1/2'}`}

@@ -144,6 +144,14 @@
   }
 }
 
+.nav-link {
+  transition: 0.3s ease-in-out all;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out all;
+  }
+}
+
 .zoom {
   transition: 0.3s ease-in-out all;
   &:hover {
