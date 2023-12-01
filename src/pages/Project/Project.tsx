@@ -64,7 +64,7 @@ export const Project = () => {
     <>
       <Container pages>
         <div className="relative">
-          <div className="absolute z-0 w-full bg-hero-page inset-x-0 -top-20 h-[800px]"></div>
+          <div className="absolute z-0 w-full bg-hero-page inset-x-0 -top-40 h-[800px]"></div>
           <div className="relative h-[500px] z-10 flex flex-col justify-center items-center">
             <div className="">
               <Title

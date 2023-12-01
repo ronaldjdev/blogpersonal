@@ -144,11 +144,29 @@
   }
 }
 
-.nav-link {
+.nav-item {
+  overflow: hidden;
+  height: 20px;
   transition: 0.3s ease-in-out all;
+  span {
+    transition: 0.3s ease-in-out all;
+    &.nav-label-0 {
+      color: #ff8800;
+      transform: translate(0px, 20px);
+    }
+  }
   &:hover {
     transform: scale(1.1);
-    transition: 0.3s ease-in-out all;
+    span {
+      &.nav-label {
+        transform: translate(0px, -40px);
+        transition: 0.3s ease-in all;
+      }
+      &.nav-label-0 {
+        transform: translate(0px, -20px);
+        transition: 0.3s ease-in-out all;
+      }
+    }
   }
 }
 

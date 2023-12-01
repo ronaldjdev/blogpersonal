@@ -9,7 +9,7 @@ interface Props {
     title: string
     description: string
   }[];
-  onSearch: unknown
+  onSearch
 
 }
 export const SearchBar = ({ data, onSearch }: Partial<Props>) => {

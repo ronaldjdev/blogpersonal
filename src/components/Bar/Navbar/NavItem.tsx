@@ -10,8 +10,9 @@ export const NavItem = ({ to, label }: Partial<Props>) => {
     <>
       <li>
         <Link to={to ? to : '#'}>
-          <div className="px-5 uppercase font-inter font-bold text-sm tracking-widest  text-red-500 bg-button hover:rounded-full hover:text-rich-black">
-            <span >{label}</span>
+          <div className="px-5 uppercase flex flex-col font-inter font-bold text-sm tracking-widest   nav-item">
+            <span className="nav-label" >{label}</span>
+            <span className="nav-label-0">{label}</span>
           </div>
         </Link>
       </li>
